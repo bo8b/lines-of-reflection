@@ -25,11 +25,14 @@ Module.register("lines",{
   getDom() {
     const wrapper = document.createElement('div');
     wrapper.classList.add(this.config.font);
-    wrapper.style.width = '100px';
+    wrapper.style.width = '800px';
     wrapper.style.textAlign = 'left';
     wrapper.style.wordWrap = 'break-word';
 
-    const preformatted = document.createElement('pre');
+    const preformatted = document.createElement('p');
+    preformatted.style.width = '800px';
+    preformatted.style.textAlign = 'left';
+    preformatted.style.wordWrap = 'break-word';
     preformatted.innerHTML = this.content;
 
     wrapper.appendChild(preformatted);
@@ -38,7 +41,7 @@ Module.register("lines",{
 
   socketNotificationReceived(notification, payload) {
     if (notification === 'TEXT_FILE_CONTENTS') {
-      this.content = payload.content.split("\n").slice(-6).join("\n");
+      this.content = payload.content.split("\n").slice(-6).join("<br>\n");
       this.updateDom();
     }
   }

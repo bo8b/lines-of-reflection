@@ -16,8 +16,7 @@ from google.cloud import texttospeech
 from six.moves import queue
 
 # Setup application credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/pi/Lines-of-Reflection/Google API/lines-of-reflection-2bd0086e0e97.json"
-
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/pi/MagicMirror/modules/lines/Google API/lines-of-reflection-e981c0246ee8.json"
 # Audio recording parameters
 RATE = 16000
 CHUNK = int(RATE / 10)  # 100ms

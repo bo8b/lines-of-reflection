@@ -2,7 +2,9 @@ Ali: Sophie!
 Lisa: Sophie!
 Ali: Sophie! Ahhh!
 Lisa: Hi!
-('I heard this:  ', 'okay', ' - Accuracy: ', 9)
+('I heard this:  ', 'go', ' - Accuracy: ', 6)
+Please try again.
+('I heard this:  ', ' go', ' - Accuracy: ', 6)
 Please try again.
 Sophie: Ali Lisa where have you been? I thought you'd get here hours ago.
 Ali: What a journey! Guess who left their ticket on the kitchen table.
@@ -14,16 +16,3 @@ Lisa: So where is he then. Your Sky? We are dying to meet him.
 Ali: How's your mum? I bet Donna's been going nuts over this wedding.
 Sophie: Yeah well listen I've got a secret and you're the only ones I can tell.
 Lisa: Oh my god! You're pregnant.
-Sophie: No! I'm inviting my Dad to my wedding.
-Ali: Your Dad?
-Lisa: You mean you've found him at last?
-Sophie: Not exactly! Look I found this in Mum's desk.
-Ali: Sophie you're not supposed to go around reading your Mum's diary!
-Lisa: No! She's supposed to go around reading yours.
-Sophie: But Look! 1979 the one she kept the year she fell pregnant with me.
-Sophie: You know how she won't talk about my Dad says she cant remember. Huh!
-Sophie: July 17th. What a night. After the show Sam rode me over to the little island.
-Sophie: We danced on the beach and kissed on the beach and...
-Ali: What?
-Lisa: Dot Dot Dot - It's what they did in the olden days
-Sophie: Sam's the one I know he is. I've never felt this before.

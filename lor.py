@@ -11,6 +11,7 @@ import numpy as np
 from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
+from google.cloud import texttospeech
 
 from six.moves import queue
 
@@ -89,6 +90,32 @@ class MicrophoneStream(object):
 
             yield b"".join(data)
 
+def read_line(text_to_speak):
+    # Instantiates a client
+    client = texttospeech.TextToSpeechClient()
+
+    # Set the text input to be synthesized
+    #synthesis_input = texttospeech.SynthesisInput(text=text_to_speak)
+    synthesis_input = texttospeech.types.SynthesisInput(text="Hello World")
+
+    # Build the voice request, select the language code ("en-US") and the ssml
+    # voice gender ("neutral")
+    voice = texttospeech.types.VoiceSelectionParams(
+        language_code="en-US", ssml_gender=texttospeech.enums.SsmlVoiceGender.NEUTRAL
+    )
+
+    # Select the type of audio file you want returned
+    audio_config = texttospeech.types.AudioConfig(
+        audio_encoding=texttospeech.enums.AudioEncoding.MP3
+    )
+
+    # Perform the text-to-speech request on the text input with the selected
+    # voice parameters and audio file type
+    response = client.synthesize_speech(
+        input_=synthesis_input, voice=voice, audio_config=audio_config
+    )
+
+
 def lines_of_reflection():
     # Setup script
     script = np.genfromtxt("/home/pi/MagicMirror/modules/lines/script.csv", delimiter = ",", autostrip = True, dtype = "string")
@@ -124,6 +151,7 @@ def lines_of_reflection():
         for line in range(script.shape[0]):
             if script[line, 0].replace(":", "") != role:
                 print(script[line, 0] + " " + script[line, 1])
+                read_line(script[line,1])
                 #print(script[line, 1])
             else:
                 # Now, put the transcription responses to use.

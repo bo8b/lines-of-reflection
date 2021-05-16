@@ -1,0 +1,1 @@
+sudo stdbuf -o0 python ~/MagicMirror/modules/lines/lor.py > ~/MagicMirror/modules/lines/output.txt

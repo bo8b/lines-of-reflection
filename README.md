@@ -15,4 +15,4 @@ This project relies on a few external components, namely Google APIs for [Speech
 
 ## Video demonstration
 
-A demonstration video can be viewed in the [Lines of Reflection.mp4](https://github.com/bo8b/lines-of-reflection/blob/main/Lines%20of%20Reflection.mp4) file
+A demonstration video can be viewed here: [Lines of Reflection Demonstration Video](https://mediaspace.illinois.edu/media/t/1_84bzc1ut)

@@ -12,3 +12,7 @@ This project relies on a few external components, namely Google APIs for [Speech
 
 * MagicMirror² should already be running.  On my device, I have it set up to autostart with pm2, but if not, then go to the ~/MagicMirror directory and run `npm start`
 * Run the command `sudo stdbuf -o0 python ~/MagicMirror/modules/lines/lor.py > ~/MagicMirror/modules/lines/output.txt`.  (This is located in the file lor.sh, for ease of use.)  This command resets the lines-of-reflection system, reloads the script.csv and role.txt (in case they're changed), and begins running again from the top of the script. 
+
+## Video demonstration
+
+A demonstration video can be viewed in the [Lines of Reflection.mp4](https://github.com/bo8b/lines-of-reflection/blob/main/Lines%20of%20Reflection.mp4) file
